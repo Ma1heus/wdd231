@@ -21,6 +21,7 @@
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 
     <title>WDD 231: Web Frontend Development I - Course Home Page</title>
 </head>
@@ -43,12 +44,42 @@
         </nav>
     </header>
     <main>
-        <h1></h1>
-        <section></section>
-        <section></section>
-        <section></section>
+        <h1>Home</h1>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>My name is Matheus, and I am passionate about technology and learning new things. I enjoy studying programming,
+            especially web development and C#, and I am always looking for ways to improve my skills. In my free time, I like
+            listening to music, playing piano, and working on personal projects that help me grow both personally and
+            professionally.</p>
+        </section>
+        <section class="student-photo">
+            <h2>Student Photo</h2>
+            <img src="images/student-photo.jpeg" alt="This is a Student's photo">
+        </section>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="buttons">
+                <button id="all-btn">All</button>
+                <button id="cse-btn">CSE</button>
+                <button id="wdd-btn">WDD</button>
+            </div>
+            
+            <div class="course-list">
+                <div class="course" data-credits="2">WDD 130</div>
+                <div class="course" data-credits="2">WDD 131</div>
+                <div class="course" data-credits="2">WDD 231</div>
+            </div>
+            
+            <p id="total"></p>
+        </section>
     </main>
     <footer>
+        <div>
+            <img src="images/github-logo.svg" alt="">
+            <img src="images/instagram-logo.svg" alt="">
+            <img src="images/linkedin-logo.svg" alt="">
+        </div>
         <p>&copy;
             <span id="currentyear"></span>
             ⚙️ Matheus Rodrigues ⚙️ Brazil
