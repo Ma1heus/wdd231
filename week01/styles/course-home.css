@@ -4,12 +4,7 @@
     box-sizing: border-box;
 }
 
-/* =========================
-   CSS VARIABLES
-========================= */
 :root {
-
-    /* Colors */
     --primary-color: #034e6e;
     --primary-hover: #04658d;
 
@@ -24,24 +19,18 @@
     --course-bg: #d9d9d9;
     --button-bg: #e5e5e5;
 
-    /* Typography */
     --main-font: 'Quicksand', sans-serif;
 
     --title-size: 1.5rem;
     --subtitle-size: 1.2rem;
     --text-size: 1rem;
 
-    /* Spacing */
     --section-width: 85%;
     --section-radius: 10px;
 
-    /* Shadow */
     --soft-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* =========================
-   BODY
-========================= */
 body {
     min-height: 100vh;
 
@@ -54,9 +43,6 @@ body {
     background-color: var(--background-color);
 }
 
-/* =========================
-   HEADER
-========================= */
 header {
     display: flex;
     justify-content: space-between;
@@ -147,9 +133,6 @@ header nav li:hover {
     transition: 0.3s ease;
 }
 
-/* =========================
-   MAIN
-========================= */
 main {
     display: flex;
     flex-direction: column;
@@ -160,9 +143,6 @@ main {
     margin-top: 2vh;
 }
 
-/* =========================
-   SHARED SECTION STYLES
-========================= */
 .about-me,
 .student-photo,
 .courses {
@@ -187,9 +167,6 @@ main {
     overflow: hidden;
 }
 
-/* =========================
-   SECTION TITLES
-========================= */
 .about-me h2,
 .student-photo h2,
 .courses h2 {
@@ -208,9 +185,6 @@ main {
     background-color: var(--primary-color);
 }
 
-/* =========================
-   ABOUT ME
-========================= */
 .about-me p {
     width: 85%;
 
@@ -220,9 +194,6 @@ main {
     font-size: var(--text-size);
 }
 
-/* =========================
-   STUDENT PHOTO
-========================= */
 .student-photo img {
     width: 80%;
     max-width: 250px;
@@ -233,9 +204,6 @@ main {
     box-shadow: var(--soft-shadow);
 }
 
-/* =========================
-   COURSE BUTTONS
-========================= */
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -272,9 +240,6 @@ main {
     color: var(--text-light);
 }
 
-/* =========================
-   COURSE LIST
-========================= */
 .course-list {
     display: flex;
     flex-direction: column;
@@ -300,9 +265,6 @@ main {
     font-weight: 600;
 }
 
-/* =========================
-   FOOTER
-========================= */
 footer {
 
     width: 100%;
