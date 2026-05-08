@@ -1,0 +1,80 @@
+@media screen and (min-width: 768px) {
+
+    header {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 0;
+    }
+
+    .logo-area {
+
+        padding: 1rem;
+    }
+
+    #menu-button {
+
+        display: none;
+    }
+
+    #menu {
+
+        position: static;
+        display: block;
+
+        width: 100%;
+    }
+
+    header nav ul {
+
+        display: flex;
+        flex-direction: row;
+
+        justify-content: flex-start;
+
+        background-color: #222;
+    }
+
+    header nav ul li {
+
+        width: auto;
+        padding: 0 1.5rem;
+    }
+
+    header nav ul a {
+
+        font-size: 1rem;
+    }
+
+    main {
+
+        display: grid;
+
+        grid-template-columns: 2fr 1fr;
+
+        gap: 1.5rem;
+
+        width: 95%;
+
+        margin: 2rem auto;
+    }
+
+    main h1 {
+
+        grid-column: 1 / 3;
+    }
+
+    .about-me,
+    .student-photo,
+    .courses {
+
+        width: 100%;
+    }
+
+    .courses {
+
+        grid-column: 1 / 3;
+    }
+}
