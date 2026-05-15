@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,113 +8,121 @@
     <meta name="description"
         content="Explore local businesses, services, and opportunities through the Curitiba Chamber of Commerce directory website.">
     <meta name="author" content="Matheus Luz Rodrigues">
-    
+
     <meta name="description"
         content="Explore local businesses, services, and opportunities through the Curitiba Chamber of Commerce directory website.">
-    
+
     <meta property="og:title" content="Curitiba Chamber of Commerce">
-    
+
     <meta property="og:description" content="Business directory and community information for Curitiba.">
-    
+
     <meta property="og:image" content="images/hero.jpg">
-    
+
     <meta property="og:url" content="https://yourwebsiteurl.com">
-    
+
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    
+
     <script src="scripts/navigation.js" defer></script>
-    
+
     <!-- Google Fonts Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <link rel="icon" href="images/araucaria.ico">
 
     <title>Curitiba Chamber of Commerce Directory</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
             <h1>Curitiba Chamber</h1>
         </div>
-    
+
         <button id="menu"></button>
-    
+
         <nav class="navigation">
             <a href="#">Home</a>
             <a href="#">Directory</a>
             <a href="#">Discover</a>
             <a href="#">Join</a>
         </nav>
-    </header>  
+    </header>
     <main>
-    
+        <div class="menu">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+
+        <section id="members"></section>
+
         <section class="hero">
             <h2>Business Directory</h2>
             <p>
                 Find local businesses and services in Curitiba.
             </p>
         </section>
-    
+
         <section class="cards">
-    
+
             <article class="card">
                 <img src="images/business1.jpg" alt="Business logo">
-    
+
                 <h3>Business Name</h3>
-    
+
                 <p>123 Main Street</p>
-    
+
                 <p>(41) 99999-9999</p>
-    
+
                 <a href="#">Visit Website</a>
             </article>
-    
+
             <article class="card">
                 <img src="images/business2.jpg" alt="Business logo">
-    
+
                 <h3>Business Name</h3>
-    
+
                 <p>456 Center Avenue</p>
-    
+
                 <p>(41) 98888-8888</p>
-    
+
                 <a href="#">Visit Website</a>
             </article>
-    
+
             <article class="card">
                 <img src="images/business3.jpg" alt="Business logo">
-    
+
                 <h3>Business Name</h3>
-    
+
                 <p>789 Commerce Road</p>
-    
+
                 <p>(41) 97777-7777</p>
-    
+
                 <a href="#">Visit Website</a>
             </article>
-    
+
         </section>
     </main>
     <footer>
         <div class="social-links">
-        
+
             <a href="https://github.com/Ma1heus">
-                <img src="images/github-logo.svg" alt="GitHub">
+                <img src="images/github.svg" alt="GitHub">
             </a>
-        
+
             <a href="https://www.linkedin.com/in/matheusluzrodrigues/">
-                <img src="images/linkedin-logo.svg" alt="LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn">
             </a>
-        
+
             <a href="https://www.instagram.com/matheus_luzro/">
-                <img src="images/instagram-logo.svg" alt="YouTube">
+                <img src="images/instagram.svg" alt="YouTube">
             </a>
-        
+
         </div>
         <p>&copy;
             <span id="currentyear"></span>
@@ -122,4 +131,5 @@
         <p id="lastModified"></p>
     </footer>
 </body>
+
 </html>

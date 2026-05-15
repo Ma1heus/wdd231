@@ -66,8 +66,10 @@ header {
     color: white;
 
     text-decoration: none;
+    text-align: center;
 
     padding: 1rem;
+    width: 100%;
 
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
