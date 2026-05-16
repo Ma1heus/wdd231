@@ -2,6 +2,10 @@ const url = 'data/members.json';
 
 const cards = document.querySelector('#members');
 
+const gridButton = document.querySelector('#grid');
+
+const listButton = document.querySelector('#list');
+
 async function getMembers() {
 
     const response = await fetch(url);
@@ -17,48 +21,111 @@ const displayMembers = (members) => {
 
     members.forEach((member) => {
 
-        let card = document.createElement('section');
+        const card = document.createElement('section');
 
-        let logo = document.createElement('img');
+        card.classList.add('card');
 
-        let name = document.createElement('h2');
+        const image = document.createElement('img');
 
-        let address = document.createElement('p');
+        image.setAttribute(
+            'src',
+            `images/${member.image}`
+        );
 
-        let phone = document.createElement('p');
+        image.setAttribute(
+            'alt',
+            `${member.name} image`
+        );
 
-        let website = document.createElement('a');
+        image.setAttribute(
+            'loading',
+            'lazy'
+        );
+
+        const content = document.createElement('div');
+
+        content.classList.add('card-content');
+
+        const name = document.createElement('h2');
 
         name.textContent = member.name;
 
-        address.textContent = member.address;
+        const description = document.createElement('p');
 
-        phone.textContent = member.phone;
+        description.textContent =
+            member.description;
+
+        const address = document.createElement('p');
+
+        address.textContent =
+            member.address;
+
+        const phone = document.createElement('p');
+
+        phone.textContent =
+            member.phone;
+
+        const website = document.createElement('a');
 
         website.textContent = 'Visit Website';
 
-        website.setAttribute('href', member.website);
+        website.href = member.website;
 
-        website.setAttribute('target', '_blank');
+        website.target = '_blank';
 
-        logo.setAttribute('src', `images/${member.image}`);
+        const membership =
+            document.createElement('span');
 
-        logo.setAttribute('alt', `${member.name} logo`);
+        membership.classList.add('membership');
 
-        logo.setAttribute('loading', 'lazy');
+        if (member.membership === 3) {
 
-        card.appendChild(logo);
+            membership.textContent = 'Gold Member';
 
-        card.appendChild(name);
+            membership.classList.add('gold');
 
-        card.appendChild(address);
+        } else if (member.membership === 2) {
 
-        card.appendChild(phone);
+            membership.textContent = 'Silver Member';
 
-        card.appendChild(website);
+            membership.classList.add('silver');
+
+        } else {
+
+            membership.textContent = 'Member';
+
+            membership.classList.add('member');
+        }
+
+        content.appendChild(name);
+
+        content.appendChild(description);
+
+        content.appendChild(address);
+
+        content.appendChild(phone);
+
+        content.appendChild(membership);
+
+        content.appendChild(website);
+
+        card.appendChild(image);
+
+        card.appendChild(content);
 
         cards.appendChild(card);
-
     });
 
 }
+
+gridButton.addEventListener('click', () => {
+
+    cards.classList.remove('list');
+
+});
+
+listButton.addEventListener('click', () => {
+
+    cards.classList.add('list');
+
+});

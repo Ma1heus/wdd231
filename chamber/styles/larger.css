@@ -4,21 +4,77 @@
         display: none;
     }
 
+    header {
+        padding: 1rem 2rem;
+    }
+
     .navigation {
         display: flex;
         flex-direction: row;
-
         position: static;
-
         width: auto;
+        gap: 0.5rem;
+        background: none;
     }
 
     .navigation a {
         border: none;
+        border-radius: 10px;
+        padding: 0.8rem 1.2rem;
     }
 
-    .cards {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .hero {
+        padding: 3rem 2rem 2rem;
     }
 
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    #members {
+        grid-template-columns:
+            repeat(auto-fit, minmax(320px, 1fr));
+
+        padding: 2rem;
+    }
+
+    .card {
+        height: 100%;
+    }
+
+    .card img {
+        height: 240px;
+    }
+
+    .card-content {
+        padding: 1.5rem;
+    }
+
+    .card h2 {
+        font-size: 1.5rem;
+    }
+
+    .view-buttons {
+        margin-bottom: 2rem;
+    }
+
+    .list .card {
+        grid-template-columns: 280px 1fr;
+    }
+
+    .list .card img {
+        height: 100%;
+    }
+
+    footer {
+        padding: 2.5rem 1rem;
+    }
+
+    .social-links {
+        gap: 2rem;
+    }
 }
