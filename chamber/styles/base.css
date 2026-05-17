@@ -79,6 +79,11 @@ header {
     transition: var(--transition);
 }
 
+.navigation a.active {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
 .navigation a:hover {
     background-color: var(--secondary-color);
 }
@@ -212,14 +217,12 @@ header {
 }
 
 .list .card {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    align-items: center;
+    display: block;
     text-align: left;
 }
 
 .list .card img {
-    height: 100%;
+    display: none;
 }
 
 footer {
@@ -227,7 +230,7 @@ footer {
     color: white;
     text-align: center;
     padding: 2rem 1rem;
-    margin-top: 2rem solid var(--primary-color);
+    margin-top: 2rem;
 }
 
 .social-links {

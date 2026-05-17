@@ -1,15 +1,10 @@
 const url = 'data/members.json';
-
 const cards = document.querySelector('#members');
-
 const gridButton = document.querySelector('#grid');
-
 const listButton = document.querySelector('#list');
 
 async function getMembers() {
-
     const response = await fetch(url);
-
     const data = await response.json();
 
     displayMembers(data.members);
@@ -68,10 +63,9 @@ const displayMembers = (members) => {
         const website = document.createElement('a');
 
         website.textContent = 'Visit Website';
-
         website.href = member.website;
-
         website.target = '_blank';
+        website.rel = 'noopener noreferrer';
 
         const membership =
             document.createElement('span');
@@ -79,53 +73,38 @@ const displayMembers = (members) => {
         membership.classList.add('membership');
 
         if (member.membership === 3) {
-
             membership.textContent = 'Gold Member';
 
             membership.classList.add('gold');
 
         } else if (member.membership === 2) {
-
             membership.textContent = 'Silver Member';
 
             membership.classList.add('silver');
 
         } else {
-
             membership.textContent = 'Member';
 
             membership.classList.add('member');
         }
 
         content.appendChild(name);
-
         content.appendChild(description);
-
         content.appendChild(address);
-
         content.appendChild(phone);
-
         content.appendChild(membership);
-
         content.appendChild(website);
-
         card.appendChild(image);
-
         card.appendChild(content);
-
         cards.appendChild(card);
     });
 
 }
 
 gridButton.addEventListener('click', () => {
-
     cards.classList.remove('list');
-
 });
 
 listButton.addEventListener('click', () => {
-
     cards.classList.add('list');
-
 });
