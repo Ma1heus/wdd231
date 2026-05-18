@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="scripts/modules.js">
+    <link rel="stylesheet" href="styles/modules.css">
+    <title>Modules Example: Course and Sections</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div id="enrollment">
+            <label for="sectionNumber">Choose a section:</label>
+            <select id="sectionNumber">
+                <option value="0" disabled selected>--</option>
+            </select>
+            <button id="enrollStudent">Enroll a Student</button>
+            <button id="dropStudent">Drop a Student</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Section</th>
+                    <th>Enrolled</th>
+                    <th>Instructor</th>
+                </tr>
+            </thead>
+            <tbody id="sections"></tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy;
+            <span id="currentyear"></span>
+            ⚙️ Matheus Rodrigues ⚙️ Parana, Brazil
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

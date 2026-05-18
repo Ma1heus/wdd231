@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Curitiba Chamber of Commerce Directory</title>
+
+    <meta name="description"
+        content="Explore local businesses, services, and opportunities through the Curitiba Chamber of Commerce directory website.">
+
+    <meta name="author" content="Matheus Luz Rodrigues">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Curitiba Chamber of Commerce">
+
+    <meta property="og:description" content="Business directory and community information for Curitiba.">
+
+    <meta property="og:image" content="images/hero.jpg">
+
+    <meta property="og:url" content="https://ma1heus.github.io/wdd231/chamber/">
+
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/araucaria.ico">
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+
+    <script src="scripts/date.js" defer></script>
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Curitiba Chamber</h1>
+        </div>
+
+        <button id="menu" aria-label="Open navigation menu"></button>
+
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#" class="active">Directory</a>
+            <a href="#">Discover</a>
+            <a href="#">Join</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Business Directory</h2>
+            <p>
+                Find local businesses and services in Curitiba.
+            </p>
+        </section>
+        <div class="view-buttons">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+        <section id="members"></section>
+    </main>
+    <footer>
+        <div class="social-links">
+
+            <a href="https://github.com/Ma1heus">
+                <img src="images/github.svg" alt="GitHub">
+            </a>
+
+            <a href="https://www.linkedin.com/in/matheusluzrodrigues/">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+
+            <a href="https://www.instagram.com/matheus_luzro/">
+                <img src="images/instagram.svg" alt="YouTube">
+            </a>
+
+        </div>
+        <p>&copy;
+            <span id="currentyear"></span>
+            ⚙️ Matheus Rodrigues ⚙️ Parana, Brazil
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
