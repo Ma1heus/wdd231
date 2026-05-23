@@ -1,11 +1,18 @@
 :root {
-    --primary-color: #1d3557;
-    --secondary-color: #457b9d;
-    --accent-color: #e63946;
+    --primary-color: #16324f;
+    --secondary-color: #28597a;
+    --accent-color: #b4232d;
     --background-color: #f1f5f9;
     --card-color: #ffffff;
-    --text-color: #222;
+    --text-color: #1a1a1a;
     --text-light: #ffffff;
+    --border-color: #cbd5e1;
+    --gold-bg: #b8860b;
+    --gold-text: #ffffff;
+    --silver-bg: #5f6b73;
+    --silver-text: #ffffff;
+    --member-bg: #4b5563;
+    --member-text: #ffffff;
     --border-radius: 16px;
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     --transition: 0.3s ease;
@@ -37,13 +44,14 @@ header {
 
 .logo h1 {
     font-size: 1.4rem;
+    color: var(--text-light);
 }
 
 #menu {
     font-size: 2rem;
     background: none;
     border: none;
-    color: white;
+    color: var(--text-light);
     cursor: pointer;
 }
 
@@ -71,7 +79,7 @@ header {
 }
 
 .navigation a {
-    color: white;
+    color: var(--text-light);
     text-decoration: none;
     text-align: center;
     padding: 1rem;
@@ -81,7 +89,6 @@ header {
 
 .navigation a.active {
     background-color: var(--secondary-color);
-    border-radius: 10px;
 }
 
 .navigation a:hover {
@@ -103,6 +110,7 @@ header {
     max-width: 600px;
     margin: auto;
     font-size: 1rem;
+    color: var(--text-color);
 }
 
 .view-buttons {
@@ -117,7 +125,7 @@ header {
     border: none;
     border-radius: 10px;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--text-light);
     cursor: pointer;
     font-weight: 700;
     transition: var(--transition);
@@ -143,6 +151,7 @@ header {
     box-shadow: var(--shadow);
     transition: var(--transition);
     text-align: center;
+    border: 1px solid var(--border-color);
 }
 
 .card:hover {
@@ -168,6 +177,7 @@ header {
 .card p {
     margin: 0.35rem 0;
     font-size: 0.95rem;
+    color: var(--text-color);
 }
 
 .membership,
@@ -185,29 +195,29 @@ header {
 }
 
 .gold {
-    background-color: gold;
-    color: black;
+    background-color: var(--gold-bg);
+    color: var(--gold-text);
 }
 
 .silver {
-    background-color: silver;
-    color: black;
+    background-color: var(--silver-bg);
+    color: var(--silver-text);
 }
 
 .member {
-    background-color: #d4d4d4;
-    color: black;
+    background-color: var(--member-bg);
+    color: var(--member-text);
 }
 
 .card a {
     background-color: var(--accent-color);
-    color: white;
+    color: var(--text-light);
     transition: var(--transition);
     margin-left: 0.5rem;
 }
 
 .card a:hover {
-    opacity: 0.9;
+    background-color: #8f1d25;
 }
 
 .list {
@@ -227,7 +237,7 @@ header {
 
 footer {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--text-light);
     text-align: center;
     padding: 2rem 1rem;
     margin-top: 2rem;
@@ -252,4 +262,119 @@ footer {
 footer p {
     margin: 0.4rem 0;
     font-size: 0.95rem;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.hero-content {
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1.2rem;
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 0.9rem 1.5rem;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.cta-button:hover {
+    background-color: #8f1d25;
+}
+
+.events,
+.weather,
+.spotlights {
+    background-color: var(--card-color);
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+}
+
+.events h2,
+.weather h2,
+.spotlights h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.event-card,
+.spotlight-card {
+    background-color: #f8fafc;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.event-card h3,
+.spotlight-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.event-card p,
+.spotlight-card p {
+    color: var(--text-color);
+}
+
+.spotlight-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.spotlight-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.spotlight-card a:hover {
+    text-decoration: underline;
+}
+
+#weather-container {
+    text-align: center;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+@media screen and (min-width: 768px) {
+
+    .hero {
+        padding: 3rem 2rem;
+    }
+
+    .hero-content {
+        max-width: 700px;
+        margin: 2rem auto 0;
+    }
+
+    .spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .events,
+    .weather,
+    .spotlights {
+        max-width: 1200px;
+        margin: 2rem auto;
+    }
 }

@@ -3,53 +3,44 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Curitiba Chamber of Commerce Directory</title>
+    <title>Curitiba Chamber of Commerce</title>
 
     <meta name="description"
-        content="Explore local businesses, services, and opportunities through the Curitiba Chamber of Commerce directory website.">
+        content="Curitiba Chamber of Commerce supporting local businesses, networking opportunities, and community growth in Curitiba, Brazil.">
 
     <meta name="author" content="Matheus Luz Rodrigues">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Curitiba Chamber of Commerce">
-
-    <meta property="og:description" content="Business directory and community information for Curitiba.">
-
+    <meta property="og:description" content="Supporting local businesses and community development in Curitiba.">
     <meta property="og:image" content="images/hero.jpg">
-
     <meta property="og:url" content="https://ma1heus.github.io/wdd231/chamber/">
-
     <meta property="og:type" content="website">
 
     <!-- Favicon -->
     <link rel="icon" href="images/araucaria.ico">
 
-    <!-- Google Fonts Preconnect -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/base.css">
-
     <link rel="stylesheet" href="styles/larger.css">
 
     <!-- JavaScript -->
     <script src="scripts/navigation.js" defer></script>
-
     <script src="scripts/date.js" defer></script>
-
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 
 <body>
+
     <header>
         <div class="logo">
             <h1>Curitiba Chamber</h1>
@@ -58,25 +49,98 @@
         <button id="menu" aria-label="Open navigation menu"></button>
 
         <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#" class="active">Directory</a>
+            <a href="#" class="active">Home</a>
+            <a href="directory.html">Directory</a>
             <a href="#">Discover</a>
             <a href="#">Join</a>
         </nav>
     </header>
+
     <main>
+
         <section class="hero">
-            <h2>Business Directory</h2>
-            <p>
-                Find local businesses and services in Curitiba.
-            </p>
+            <img src="images/curitiba-hero.jpg" alt="Curitiba city view" class="hero-image">
+
+            <div class="hero-content">
+                <h2>Curitiba Chamber of Commerce</h2>
+
+                <p>
+                    Supporting local businesses, networking opportunities,
+                    and community growth in Curitiba.
+                </p>
+
+                <a href="join.html" class="cta-button">
+                    Join the Chamber
+                </a>
+            </div>
         </section>
-        <div class="view-buttons">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-        </div>
-        <section id="members"></section>
+
+        <section class="events">
+            <h2>Current Events</h2>
+
+            <article class="event-card">
+                <h3>Business Networking Night</h3>
+
+                <p>
+                    Meet local entrepreneurs and business owners for an
+                    evening of networking and collaboration.
+                </p>
+
+                <p><strong>Date:</strong> June 5, 2026</p>
+            </article>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+
+            <div id="weather-container">
+                <p>Loading weather data...</p>
+            </div>
+        </section>
+
+        <section class="spotlights">
+            <h2>Company Spotlights</h2>
+
+            <div class="spotlight-container">
+
+                <article class="spotlight-card">
+                    <h3>Tech Curitiba</h3>
+
+                    <p>
+                        Innovative technology solutions helping businesses
+                        grow in the digital world.
+                    </p>
+
+                    <a href="#">Learn More</a>
+                </article>
+
+                <article class="spotlight-card">
+                    <h3>Green Market</h3>
+
+                    <p>
+                        Local organic products and sustainable business
+                        practices supporting the community.
+                    </p>
+
+                    <a href="#">Learn More</a>
+                </article>
+
+                <article class="spotlight-card">
+                    <h3>Paraná Finance</h3>
+
+                    <p>
+                        Financial consulting services for startups and
+                        growing businesses in Curitiba.
+                    </p>
+
+                    <a href="#">Learn More</a>
+                </article>
+
+            </div>
+        </section>
+
     </main>
+
     <footer>
         <div class="social-links">
 
@@ -89,16 +153,19 @@
             </a>
 
             <a href="https://www.instagram.com/matheus_luzro/">
-                <img src="images/instagram.svg" alt="YouTube">
+                <img src="images/instagram.svg" alt="Instagram">
             </a>
 
         </div>
-        <p>&copy;
-            <span id="currentyear"></span>
-            ⚙️ Matheus Rodrigues ⚙️ Parana, Brazil
+
+        <p>
+            &copy; <span id="currentyear"></span>
+            ⚙️ Matheus Rodrigues ⚙️ Paraná, Brazil
         </p>
+
         <p id="lastModified"></p>
     </footer>
+
 </body>
 
 </html>
