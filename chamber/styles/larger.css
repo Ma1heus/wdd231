@@ -24,7 +24,13 @@
     }
 
     .hero {
-        padding: 3rem 2rem 2rem;
+        padding: 3rem 2rem;
+    }
+
+    .hero-image {
+        max-width: 1200px;
+        width: 100%;
+        height: auto;
     }
 
     .hero h2 {
@@ -35,10 +41,33 @@
         font-size: 1.1rem;
     }
 
-    #members {
-        grid-template-columns:
-            repeat(auto-fit, minmax(320px, 1fr));
+    .hero-content {
+        max-width: 700px;
+        margin: 2rem auto 0;
+    }
 
+    .cta-button {
+        font-size: 1rem;
+    }
+
+    .events,
+    .weather,
+    .spotlights {
+        max-width: 1200px;
+        margin: 2rem auto;
+    }
+
+    .spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .event-card,
+    .spotlight-card {
+        height: 100%;
+    }
+
+    #members {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         padding: 2rem;
     }
 
@@ -63,10 +92,13 @@
     }
 
     .list .card {
+        display: grid;
         grid-template-columns: 280px 1fr;
+        align-items: stretch;
     }
 
     .list .card img {
+        display: block;
         height: 100%;
     }
 
