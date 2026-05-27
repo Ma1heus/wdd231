@@ -109,4 +109,41 @@
     .social-links {
         gap: 2rem;
     }
+
+   
+
+    .weather-content {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 2rem;
+
+        width: 100%;
+        max-width: 1000px;
+
+        margin-top: 1rem;
+    }
+
+    .forecast-card {
+        min-width: 120px;
+        padding: 1.5rem;
+    }
+
+    .spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .spotlight-card {
+        padding: 2rem;
+    }
+
+    .spotlight-card img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .spotlight-card h3 {
+        font-size: 1.4rem;
+    }
 }
