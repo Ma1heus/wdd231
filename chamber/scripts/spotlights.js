@@ -1,18 +1,21 @@
 const spotlightContainer =
     document.querySelector('.spotlight-container');
 
-const membersURL = 'data/members.json';
+const membersURL =
+    'data/members.json';
 
 
 async function getSpotlights() {
 
     try {
 
-        const response = await fetch(membersURL);
+        const response =
+            await fetch(membersURL);
 
         if (response.ok) {
 
-            const data = await response.json();
+            const data =
+                await response.json();
 
             displaySpotlights(data.members);
 
@@ -30,26 +33,50 @@ async function getSpotlights() {
 }
 
 
+function shuffleArray(array) {
+
+    for (
+        let i = array.length - 1;
+        i > 0;
+        i--
+    ) {
+
+        const j =
+            Math.floor(
+                Math.random() * (i + 1)
+            );
+
+        [array[i], array[j]] =
+            [array[j], array[i]];
+    }
+
+    return array;
+}
+
+
 function displaySpotlights(members) {
 
     spotlightContainer.innerHTML = "";
 
-    // only silver and gold
-    const qualifiedMembers = members.filter(member =>
-        member.membership === 2 ||
-        member.membership === 3
-    );
+    // Gold and Silver only
+    const qualifiedMembers =
+        members.filter(member =>
+            member.membership === 2 ||
+            member.membership === 3
+        );
 
-    // randomize
-    const shuffled =
-        qualifiedMembers.sort(() => 0.5 - Math.random());
+    // Randomize members
+    const shuffledMembers =
+        shuffleArray(qualifiedMembers);
 
-    // choose 3
-    const selected = shuffled.slice(0, 3);
+    // Select 3 members
+    const selectedMembers =
+        shuffledMembers.slice(0, 3);
 
-    selected.forEach(member => {
+    selectedMembers.forEach(member => {
 
-        const card = document.createElement('div');
+        const card =
+            document.createElement('div');
 
         card.classList.add('spotlight-card');
 
@@ -62,6 +89,7 @@ function displaySpotlights(members) {
             <img
                 src="images/${member.image}"
                 alt="${member.name} logo"
+                loading="lazy"
             >
 
             <h3>${member.name}</h3>
@@ -81,6 +109,7 @@ function displaySpotlights(members) {
             <a
                 href="${member.website}"
                 target="_blank"
+                rel="noopener"
             >
                 Visit Website
             </a>

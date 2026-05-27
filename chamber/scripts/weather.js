@@ -3,9 +3,11 @@ const myDescription = document.querySelector('#description');
 const myTemperature = document.querySelector('#temperature');
 const myGraphic = document.querySelector('#graphic');
 
-const forecastContainer = document.querySelector('#forecast-container');
+const forecastContainer =
+    document.querySelector('#forecast-container');
 
-const myKey = "c5aa7056cf976adc98533d4938967bfc";
+const myKey =
+    "SUA_API_KEY";
 
 const myLat = "-25.405477";
 const myLong = "-49.203318";
@@ -22,13 +24,13 @@ async function apiFetch() {
 
     try {
 
-        const response = await fetch(currentWeatherURL);
+        const response =
+            await fetch(currentWeatherURL);
 
         if (response.ok) {
 
-            const data = await response.json();
-
-            console.log(data);
+            const data =
+                await response.json();
 
             displayResults(data);
 
@@ -49,9 +51,11 @@ async function apiFetch() {
 // DISPLAY CURRENT WEATHER
 function displayResults(data) {
 
-    myTown.innerHTML = data.name;
+    myTown.textContent =
+        data.name;
 
-    myDescription.innerHTML = data.weather[0].description;
+    myDescription.textContent =
+        data.weather[0].description;
 
     myTemperature.innerHTML =
         `${Math.round(data.main.temp)}&deg;C`;
@@ -59,27 +63,25 @@ function displayResults(data) {
     const iconsrc =
         `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
 
-    myGraphic.setAttribute('src', iconsrc);
+    myGraphic.src = iconsrc;
 
-    myGraphic.setAttribute(
-        'alt',
-        data.weather[0].description
-    );
+    myGraphic.alt =
+        data.weather[0].description;
 }
 
 
-// FORECAST API
+// FORECAST
 async function apiForecast() {
 
     try {
 
-        const response = await fetch(forecastURL);
+        const response =
+            await fetch(forecastURL);
 
         if (response.ok) {
 
-            const data = await response.json();
-
-            console.log(data);
+            const data =
+                await response.json();
 
             displayForecast(data);
 
@@ -97,43 +99,56 @@ async function apiForecast() {
 }
 
 
-// DISPLAY 3-DAY FORECAST
+// DISPLAY FORECAST
 function displayForecast(data) {
 
     forecastContainer.innerHTML = "";
 
-    const dailyForecasts = data.list.filter(item =>
-        item.dt_txt.includes("12:00:00")
-    );
-
-    dailyForecasts.slice(0, 3).forEach(day => {
-
-        const date = new Date(day.dt_txt);
-
-        const dayName = date.toLocaleDateString(
-            "en-US",
-            {
-                weekday: "short"
-            }
+    const dailyForecasts =
+        data.list.filter(item =>
+            item.dt_txt.includes("12:00:00")
         );
 
-        const temp = Math.round(day.main.temp);
+    dailyForecasts
+        .slice(0, 3)
+        .forEach(day => {
 
-        const forecastCard = document.createElement("div");
+            const date =
+                new Date(day.dt_txt);
 
-        forecastCard.classList.add("forecast-card");
+            const dayName =
+                date.toLocaleDateString(
+                    "en-US",
+                    {
+                        weekday: "short"
+                    }
+                );
 
-        forecastCard.innerHTML = `
-            <p><strong>${dayName}</strong></p>
-            <p>${temp}°C</p>
-        `;
+            const temp =
+                Math.round(day.main.temp);
 
-        forecastContainer.appendChild(forecastCard);
+            const forecastCard =
+                document.createElement("div");
 
-    });
+            forecastCard.classList.add(
+                "forecast-card"
+            );
+
+            forecastCard.innerHTML = `
+                <p>
+                    <strong>${dayName}</strong>
+                </p>
+
+                <p>${temp}°C</p>
+            `;
+
+            forecastContainer.appendChild(
+                forecastCard
+            );
+
+        });
 }
 
 
-// CALL FUNCTIONS
 apiFetch();
 apiForecast();

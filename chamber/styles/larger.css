@@ -23,6 +23,8 @@
         padding: 0.8rem 1.2rem;
     }
 
+    /* HERO */
+
     .hero {
         padding: 3rem 2rem;
     }
@@ -33,8 +35,10 @@
         height: auto;
     }
 
-    .hero h2 {
-        font-size: 2.5rem;
+    /* ALTERADO DE h2 PARA h1 */
+
+    .hero h1 {
+        font-size: 2.8rem;
     }
 
     .hero p {
@@ -50,6 +54,8 @@
         font-size: 1rem;
     }
 
+    /* MAIN SECTIONS */
+
     .events,
     .weather,
     .spotlights {
@@ -57,14 +63,59 @@
         margin: 2rem auto;
     }
 
-    .spotlight-container {
-        grid-template-columns: repeat(3, 1fr);
+    /* WEATHER */
+
+    .weather-card {
+        max-width: 450px;
+        padding: 2rem;
     }
 
-    .event-card,
-    .spotlight-card {
-        height: 100%;
+    #town {
+        font-size: 2rem;
     }
+
+    #temperature {
+        font-size: 3rem;
+    }
+
+    .forecast {
+        margin-top: 2.5rem;
+    }
+
+    #forecast-container {
+        gap: 1.5rem;
+    }
+
+    .forecast-card {
+        min-width: 120px;
+        padding: 1.5rem;
+    }
+
+    .forecast-card strong {
+        font-size: 1.1rem;
+    }
+
+    /* SPOTLIGHTS */
+
+    .spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .spotlight-card {
+        padding: 2rem;
+    }
+
+    .spotlight-card img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .spotlight-card h3 {
+        font-size: 1.4rem;
+    }
+
+    /* MEMBERS DIRECTORY */
 
     #members {
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -91,6 +142,8 @@
         margin-bottom: 2rem;
     }
 
+    /* LIST VIEW */
+
     .list .card {
         display: grid;
         grid-template-columns: 280px 1fr;
@@ -102,48 +155,13 @@
         height: 100%;
     }
 
+    /* FOOTER */
+
     footer {
         padding: 2.5rem 1rem;
     }
 
     .social-links {
         gap: 2rem;
-    }
-
-   
-
-    .weather-content {
-        display: flex;
-        justify-content: center;
-        align-items: stretch;
-        gap: 2rem;
-
-        width: 100%;
-        max-width: 1000px;
-
-        margin-top: 1rem;
-    }
-
-    .forecast-card {
-        min-width: 120px;
-        padding: 1.5rem;
-    }
-
-    .spotlight-container {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-    }
-
-    .spotlight-card {
-        padding: 2rem;
-    }
-
-    .spotlight-card img {
-        width: 140px;
-        height: 140px;
-    }
-
-    .spotlight-card h3 {
-        font-size: 1.4rem;
     }
 }
