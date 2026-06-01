@@ -66,6 +66,7 @@ header {
     box-shadow: var(--shadow);
 }
 
+.logo h1,
 .logo h2 {
     font-size: 1.4rem;
     font-weight: 700;
@@ -193,7 +194,15 @@ header {
     margin-bottom: 1rem;
 }
 
-.hero p {
+.hero h2 {
+    font-size: 2rem;
+
+    color: var(--primary-color);
+
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
     color: var(--text-light);
 
     max-width: 600px;
@@ -480,6 +489,178 @@ header {
     font-weight: 700;
 
     color: var(--primary-color);
+}
+
+/* DIRECTORY HERO */
+
+.directory-hero {
+    background-color: var(--card-color);
+
+    text-align: center;
+
+    margin: 1rem;
+
+    padding: 2rem;
+
+    border-radius: var(--border-radius);
+
+    border: 1px solid var(--border-color);
+
+    box-shadow: var(--shadow);
+}
+
+.directory-hero h2 {
+    color: var(--primary-color);
+
+    font-size: 2rem;
+
+    margin-bottom: 0.75rem;
+}
+
+.directory-hero p {
+    color: var(--text-color);
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+/* DIRECTORY */
+
+.view-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 1rem;
+
+    margin: 1.5rem 0;
+}
+
+.view-buttons button {
+    background-color: var(--primary-color);
+
+    color: var(--text-light);
+
+    border: none;
+
+    padding: 0.8rem 1.4rem;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-weight: 700;
+
+    transition: var(--transition);
+}
+
+.view-buttons button:hover {
+    background-color: var(--secondary-color);
+}
+
+#members {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 1.5rem;
+
+    padding: 1rem;
+}
+
+.card {
+    background-color: var(--card-color);
+
+    border-radius: var(--border-radius);
+
+    overflow: hidden;
+
+    border: 1px solid var(--border-color);
+
+    box-shadow: var(--shadow);
+
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card img {
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.card-content {
+    padding: 1.2rem;
+}
+
+.card h2 {
+    color: var(--primary-color);
+
+    margin-bottom: 0.75rem;
+}
+
+.card p {
+    margin-bottom: 0.5rem;
+}
+
+.card a {
+    display: inline-block;
+
+    margin-top: 0.8rem;
+
+    text-decoration: none;
+
+    color: var(--accent-color);
+
+    font-weight: 700;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.membership {
+    display: inline-block;
+
+    margin-top: 0.8rem;
+
+    margin-right: 0.5rem;
+
+    padding: 0.4rem 0.8rem;
+
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+
+    font-weight: 700;
+}
+
+.gold {
+    background-color: var(--gold-bg);
+
+    color: var(--gold-text);
+}
+
+.silver {
+    background-color: var(--silver-bg);
+
+    color: var(--silver-text);
+}
+
+.member {
+    background-color: var(--member-bg);
+
+    color: var(--member-text);
 }
 
 

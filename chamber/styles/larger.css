@@ -155,6 +155,20 @@
         height: 100%;
     }
 
+    /* Directory */
+
+    .directory-hero {
+        max-width: 1200px;
+
+        margin: 2rem auto;
+
+        padding: 3rem;
+    }
+
+    .directory-hero h2 {
+        font-size: 2.5rem;
+    }
+
     /* FOOTER */
 
     footer {
