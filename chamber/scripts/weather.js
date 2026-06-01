@@ -6,8 +6,7 @@ const myGraphic = document.querySelector('#graphic');
 const forecastContainer =
     document.querySelector('#forecast-container');
 
-const myKey =
-    "SUA_API_KEY";
+const myKey = "c5aa7056cf976adc98533d4938967bfc";
 
 const myLat = "-25.405477";
 const myLong = "-49.203318";
