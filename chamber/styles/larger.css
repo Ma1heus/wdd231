@@ -1,5 +1,4 @@
 @media only screen and (min-width: 768px) {
-
     #menu {
         display: none;
     }
@@ -167,6 +166,27 @@
 
     .directory-hero h2 {
         font-size: 2.5rem;
+    }
+
+    /* JOIN PAGE */
+
+    .join-hero {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 3rem;
+    }
+
+    .join-container {
+        max-width: 1200px;
+        margin: 0 auto 2rem;
+
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
+    .membership-cards {
+        position: sticky;
+        top: 2rem;
     }
 
     /* FOOTER */

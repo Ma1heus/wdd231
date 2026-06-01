@@ -51,19 +51,16 @@ body {
 /* HEADER */
 
 header {
-    background-color: var(--primary-color);
-
-    color: var(--text-light);
-
-    padding: 1rem;
-
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
 
-    position: relative;
+    padding: 1rem;
 
     box-shadow: var(--shadow);
+    color: var(--text-light);
+    background-color: var(--primary-color);
 }
 
 .logo h1,
@@ -100,19 +97,15 @@ header {
 
 .navigation {
     display: none;
-
     flex-direction: column;
-
     position: absolute;
 
     top: 70px;
     left: 0;
-
     width: 100%;
+    z-index: 100;
 
     background-color: var(--primary-color);
-
-    z-index: 100;
 }
 
 .navigation.open {
@@ -121,16 +114,12 @@ header {
 
 .navigation a {
     color: var(--text-light);
-
     text-decoration: none;
-
     text-align: center;
 
     padding: 1rem;
 
-    border-top:
-        1px solid rgba(255, 255, 255, 0.2);
-
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     transition: var(--transition);
 }
 
@@ -144,25 +133,19 @@ header {
 
 .hero {
     position: relative;
-
     text-align: center;
-
     overflow: hidden;
-
     margin: 1rem;
 }
 
 .hero-image {
-    width: 100%;
-
-    min-height: 350px;
-
+    display: block;
     object-fit: cover;
 
-    display: block;
+    width: 100%;
+    min-height: 350px;
 
     border-radius: var(--border-radius);
-
     box-shadow: var(--shadow);
 }
 
@@ -173,40 +156,31 @@ header {
     left: 50%;
 
     transform: translate(-50%, -50%);
-
+    color: var(--text-light);
     background-color: rgba(0, 0, 0, 0.45);
 
     padding: 2rem;
-
     border-radius: 16px;
 
     width: 90%;
     max-width: 700px;
-
-    color: var(--text-light);
 }
 
 .hero h1 {
     font-size: 2rem;
-
     color: var(--text-light);
-
     margin-bottom: 1rem;
 }
 
 .hero h2 {
     font-size: 2rem;
-
     color: var(--primary-color);
-
     margin-bottom: 1rem;
 }
 
 .hero-content p {
     color: var(--text-light);
-
     max-width: 600px;
-
     margin: auto;
 }
 
@@ -217,28 +191,21 @@ header {
     display: inline-block;
 
     margin-top: 1.5rem;
+    padding: 1rem 1.6rem;
+    border-radius: 12px;
 
     background-color: var(--accent-color);
-
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     color: var(--text-light);
 
     text-decoration: none;
-
-    padding: 1rem 1.6rem;
-
-    border-radius: 12px;
-
     font-weight: 700;
 
     transition: var(--transition);
-
-    box-shadow:
-        0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .cta-button:hover {
     background-color: #8f1d25;
-
     transform: translateY(-2px);
 }
 
@@ -250,24 +217,19 @@ header {
     background-color: var(--card-color);
 
     margin: 1rem;
-
     padding: 1.8rem;
 
     border-radius: var(--border-radius);
-
-    box-shadow: var(--shadow);
-
     border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
 }
 
 .events h2,
 .spotlights h2 {
     text-align: center;
-
     color: var(--primary-color);
 
     margin-bottom: 1.5rem;
-
     font-size: 1.8rem;
 }
 
@@ -276,17 +238,14 @@ header {
 
 .event-card {
     background-color: #f8fafc;
-
     border: 1px solid var(--border-color);
 
     border-radius: 12px;
-
     padding: 1rem;
 }
 
 .event-card h3 {
     color: var(--primary-color);
-
     margin-bottom: 0.5rem;
 }
 
@@ -298,25 +257,19 @@ header {
         linear-gradient(135deg,
             var(--primary-color),
             var(--secondary-color));
-
     color: var(--text-light);
-
     text-align: center;
 
     margin: 1rem;
-
     padding: 1.8rem;
 
     border-radius: var(--border-radius);
-
     box-shadow: var(--shadow);
 }
 
 .weather h2 {
     color: #ffffff;
-
     margin-bottom: 1.5rem;
-
     font-size: 1.8rem;
 }
 
@@ -326,19 +279,14 @@ header {
 .weather-card {
     background-color:
         rgba(0, 0, 0, 0.2);
-
     backdrop-filter: blur(10px);
 
     border-radius: 20px;
-
     padding: 1.5rem;
-
     max-width: 320px;
-
     margin: auto;
 
-    border:
-        1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 #town {
@@ -346,24 +294,20 @@ header {
     font-weight: 700;
 
     color: #ffe082;
-
     margin-bottom: 0.5rem;
 }
 
 #graphic {
+    display: block;
+    margin: auto;
+
     width: 100px;
     height: 100px;
-
-    display: block;
-
-    margin: auto;
 }
 
 #description {
     font-size: 1.1rem;
-
     text-transform: capitalize;
-
     margin-bottom: 0.5rem;
 }
 
@@ -383,28 +327,23 @@ header {
 
 .forecast h3 {
     margin-bottom: 1rem;
-
     color: var(--text-light);
 }
 
 #forecast-container {
     display: flex;
-
+    flex-wrap: wrap;
     justify-content: center;
 
     gap: 1rem;
-
-    flex-wrap: wrap;
 }
 
 .forecast-card {
     background-color:
         rgba(0, 0, 0, 0.2);
-
     border-radius: 16px;
 
     padding: 1rem;
-
     min-width: 90px;
 }
 
@@ -417,9 +356,7 @@ header {
 
 .spotlight-container {
     display: grid;
-
     grid-template-columns: 1fr;
-
     gap: 1.5rem;
 }
 
@@ -428,17 +365,13 @@ header {
         linear-gradient(135deg,
             #ffffff,
             #f8fafc);
-
     border-radius: 18px;
 
     padding: 1.5rem;
-
     text-align: center;
 
     border: 1px solid var(--border-color);
-
     box-shadow: var(--shadow);
-
     transition: var(--transition);
 }
 
@@ -451,13 +384,11 @@ header {
     height: 120px;
 
     object-fit: contain;
-
     margin-bottom: 1rem;
 }
 
 .spotlight-card h3 {
     color: var(--primary-color);
-
     margin-bottom: 0.5rem;
 }
 
@@ -467,27 +398,20 @@ header {
 
 .spotlight-card a {
     display: inline-block;
-
     margin-top: 0.8rem;
-
-    background-color: var(--accent-color);
-
-    color: var(--text-light);
-
     padding: 0.7rem 1.2rem;
 
+    background-color: var(--accent-color);
+    color: var(--text-light);
     border-radius: 10px;
 
     text-decoration: none;
-
     font-weight: 700;
 }
 
 .membership-level {
     margin-top: 1rem;
-
     font-weight: 700;
-
     color: var(--primary-color);
 }
 
@@ -499,29 +423,22 @@ header {
     text-align: center;
 
     margin: 1rem;
-
     padding: 2rem;
 
     border-radius: var(--border-radius);
-
     border: 1px solid var(--border-color);
-
     box-shadow: var(--shadow);
 }
 
 .directory-hero h2 {
     color: var(--primary-color);
-
     font-size: 2rem;
-
     margin-bottom: 0.75rem;
 }
 
 .directory-hero p {
     color: var(--text-color);
-
     max-width: 700px;
-
     margin: auto;
 }
 
@@ -529,29 +446,24 @@ header {
 
 .view-buttons {
     display: flex;
-
     justify-content: center;
 
     gap: 1rem;
-
     margin: 1.5rem 0;
 }
 
 .view-buttons button {
     background-color: var(--primary-color);
-
     color: var(--text-light);
 
     border: none;
+    border-radius: 10px;
 
     padding: 0.8rem 1.4rem;
-
-    border-radius: 10px;
 
     cursor: pointer;
 
     font-family: inherit;
-
     font-weight: 700;
 
     transition: var(--transition);
@@ -563,25 +475,19 @@ header {
 
 #members {
     display: grid;
-
     grid-template-columns: 1fr;
 
     gap: 1.5rem;
-
     padding: 1rem;
 }
 
 .card {
     background-color: var(--card-color);
-
     border-radius: var(--border-radius);
-
-    overflow: hidden;
-
     border: 1px solid var(--border-color);
-
     box-shadow: var(--shadow);
 
+    overflow: hidden;
     transition: var(--transition);
 }
 
@@ -590,13 +496,11 @@ header {
 }
 
 .card img {
-    width: 100%;
-
-    height: 220px;
-
     object-fit: cover;
-
     display: block;
+
+    width: 100%;
+    height: 220px;
 }
 
 .card-content {
@@ -605,7 +509,6 @@ header {
 
 .card h2 {
     color: var(--primary-color);
-
     margin-bottom: 0.75rem;
 }
 
@@ -619,7 +522,6 @@ header {
     margin-top: 0.8rem;
 
     text-decoration: none;
-
     color: var(--accent-color);
 
     font-weight: 700;
@@ -633,64 +535,201 @@ header {
     display: inline-block;
 
     margin-top: 0.8rem;
-
     margin-right: 0.5rem;
-
     padding: 0.4rem 0.8rem;
 
     border-radius: 999px;
 
     font-size: 0.9rem;
-
     font-weight: 700;
 }
 
 .gold {
     background-color: var(--gold-bg);
-
     color: var(--gold-text);
 }
 
 .silver {
     background-color: var(--silver-bg);
-
     color: var(--silver-text);
 }
 
 .member {
     background-color: var(--member-bg);
-
     color: var(--member-text);
 }
 
+/* JOIN HERO */
+
+.join-hero {
+    background-color: var(--card-color);
+
+    text-align: center;
+
+    margin: 1rem;
+    padding: 2rem;
+
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+.join-hero h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.join-hero p {
+    max-width: 700px;
+    margin: auto;
+}
+
+
+/* JOIN LAYOUT */
+
+.join-container {
+    display: grid;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+
+/* FORM */
+
+.join-form {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+    gap: 1rem;
+
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+.join-form label {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    width: 100%;
+    padding: 0.9rem;
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.join-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+    outline: 2px solid var(--secondary-color);
+}
+
+
+/* SUBMIT BUTTON */
+
+.join-form input[type="submit"] {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+
+    border: none;
+    cursor: pointer;
+
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.join-form input[type="submit"]:hover {
+    background-color: #8f1d25;
+}
+
+
+/* MEMBERSHIP CARDS */
+
+.membership-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-card {
+    background-color: var(--card-color);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+
+    padding: 1.5rem;
+
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.membership-card:hover {
+    transform: translateY(-4px);
+}
+
+.membership-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+.membership-card p {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+/* MEMBERSHIP COLORS */
+
+.membership-card.np {
+    border-left: 8px solid #4b5563;
+}
+
+.membership-card.bronze {
+    border-left: 8px solid #cd7f32;
+}
+
+.membership-card.silver {
+    border-left: 8px solid #a8a8a8;
+}
+
+.membership-card.gold {
+    border-left: 8px solid #d4af37;
+}
 
 /* FOOTER */
 
 footer {
     background-color: var(--primary-color);
-
     color: var(--text-light);
 
     text-align: center;
 
     padding: 2rem 1rem;
-
     margin-top: 2rem;
 }
 
 .social-links {
     display: flex;
-
     justify-content: center;
 
     gap: 1.5rem;
-
     margin-bottom: 1rem;
 }
 
 .social-links img {
     width: 38px;
-
     transition: var(--transition);
 }
 
