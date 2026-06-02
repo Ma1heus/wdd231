@@ -94,13 +94,14 @@
                 </label>
 
                 <input type="text" id="firstName" name="firstName" title="Enter your first name"
-                    autocomplete="given-name">
+                    autocomplete="given-name" required>
 
                 <label for="lastName">
                     Last Name
                 </label>
 
-                <input type="text" id="lastName" name="lastName" title="Enter your last name" autocomplete="family-name">
+                <input type="text" id="lastName" name="lastName" title="Enter your last name" autocomplete="family-name"
+                    required>
 
                 <label for="organizationTitle">
                     Organization Title
@@ -108,28 +109,28 @@
 
                 <input type="text" id="organizationTitle" name="organizationTitle"
                     title="Enter at least 7 characters using letters, spaces, and hyphens only"
-                    autocomplete="organization-title" pattern="[A-Za-zÀ-ÿ\s\-]{7,}">
+                    autocomplete="organization-title" pattern="[A-Za-zÀ-ÿ\s\-]{7,}" required>
 
                 <label for="email">
                     Email Address
                 </label>
 
                 <input type="email" id="email" name="email" title="Enter a valid email address" autocomplete="email"
-                    placeholder="example@email.com">
+                    placeholder="example@email.com" required>
 
                 <label for="phone">
                     Mobile Phone
                 </label>
 
                 <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel"
-                  >
+                    required>
 
                 <label for="organization">
                     Business / Organization Name
                 </label>
 
                 <input type="text" id="organization" name="organization" title="Enter your organization name"
-                    autocomplete="organization" >
+                    autocomplete="organization" required>
 
                 <label for="membership">
                     Membership Level
