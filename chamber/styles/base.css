@@ -663,6 +663,8 @@ header {
 .membership-cards {
     display: grid;
     gap: 1rem;
+    animation: fadeInUp 0.8s ease forwards;
+  
 }
 
 .membership-card {
@@ -690,8 +692,6 @@ header {
     margin-bottom: 0.5rem;
 }
 
-/* MEMBERSHIP COLORS */
-
 .membership-card.np {
     border-left: 8px solid #4b5563;
 }
@@ -706,6 +706,153 @@ header {
 
 .membership-card.gold {
     border-left: 8px solid #d4af37;
+}
+
+.modal-btn {
+    margin-top: 1rem;
+    padding: 0.7rem 1.2rem;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--primary-color);
+    color: var(--text-light);
+
+    font-family: inherit;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.modal-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+dialog {
+    border: none;
+    border-radius: var(--border-radius);
+
+    padding: 2rem;
+
+    width: 90%;
+    max-width: 500px;
+
+    box-shadow: var(--shadow);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+dialog p {
+    margin-bottom: 1rem;
+}
+
+.close-btn {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 0.8rem 1.2rem;
+
+    cursor: pointer;
+
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.join-form input:required,
+.join-form select:required {
+    border-left: 4px solid var(--accent-color);
+}
+
+.join-form input:required:valid,
+.join-form select:required:valid {
+    border-left: 4px solid #22c55e;
+}
+
+/* THANK YOU PAGE */
+
+.thankyou-card {
+    background-color: var(--card-color);
+
+    max-width: 800px;
+
+    margin: 2rem auto;
+    padding: 2rem;
+
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+
+    box-shadow: var(--shadow);
+}
+
+.thankyou-card h1 {
+    color: var(--primary-color);
+
+    text-align: center;
+
+    margin-bottom: 1rem;
+}
+
+.thankyou-card p {
+    text-align: center;
+
+    margin-bottom: 2rem;
+}
+
+.application-data {
+    display: grid;
+
+    gap: 1rem;
+}
+
+.application-data div {
+    background-color: #f8fafc;
+
+    padding: 1rem;
+
+    border-radius: 10px;
+
+    border-left: 5px solid var(--primary-color);
+}
+
+.application-data strong {
+    color: var(--primary-color);
+}
+
+.return-home {
+    display: block;
+
+    width: fit-content;
+
+    margin: 2rem auto 0;
+
+    padding: 0.9rem 1.5rem;
+
+    border-radius: 10px;
+
+    background-color: var(--accent-color);
+    color: var(--text-light);
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: var(--transition);
+}
+
+.return-home:hover {
+    background-color: #8f1d25;
 }
 
 /* FOOTER */

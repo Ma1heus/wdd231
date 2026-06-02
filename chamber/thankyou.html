@@ -6,53 +6,20 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Curitiba Chamber of Commerce</title>
+    <title>Thank You | Curitiba Chamber of Commerce</title>
 
-    <meta name="description"
-        content="Curitiba Chamber of Commerce supporting local businesses, networking opportunities, and community growth in Curitiba, Brazil.">
+    <meta name="description" content="Thank you for your membership application to the Curitiba Chamber of Commerce.">
 
     <meta name="author" content="Matheus Luz Rodrigues">
 
-    <!-- Open Graph Meta Tags -->
-
-    <meta property="og:title" content="Curitiba Chamber of Commerce">
-
-    <meta property="og:description" content="Supporting local businesses and community development in Curitiba.">
-
-    <meta property="og:image" content="https://ma1heus.github.io/wdd231/chamber/images/curitiba-hero.jpg">
-
-    <meta property="og:url" content="https://ma1heus.github.io/wdd231/chamber/">
-
-    <meta property="og:type" content="website">
-
-    <!-- Favicon -->
-
     <link rel="icon" href="images/araucaria.ico">
 
-    <!-- Google Fonts -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS -->
-
     <link rel="stylesheet" href="styles/base.css">
-
     <link rel="stylesheet" href="styles/larger.css">
 
-    <!-- JavaScript -->
-
     <script src="scripts/navigation.js" defer></script>
-
     <script src="scripts/date.js" defer></script>
-
-    <script src="scripts/weather.js" defer></script>
-
-    <script src="scripts/spotlights.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 
 </head>
 
@@ -67,20 +34,73 @@
         <button id="menu" aria-label="Open navigation menu"></button>
 
         <nav class="navigation">
-
             <a href="index.html">Home</a>
-
             <a href="directory.html">Directory</a>
-
             <a href="discover.html">Discover</a>
-
             <a href="join.html">Join</a>
-
         </nav>
 
     </header>
 
     <main>
+
+        <section class="thankyou-card">
+
+            <h1>Application Received!</h1>
+
+            <p>
+                Thank you for applying to join the Curitiba Chamber of Commerce.
+            </p>
+
+            <div class="application-data">
+
+                <div>
+                    <strong>First Name:</strong>
+                    <span id="firstName"></span>
+                </div>
+
+                <div>
+                    <strong>Last Name:</strong>
+                    <span id="lastName"></span>
+                </div>
+
+                <div>
+                    <strong>Organization Title:</strong>
+                    <span id="organizationTitle"></span>
+                </div>
+
+                <div>
+                    <strong>Email:</strong>
+                    <span id="email"></span>
+                </div>
+
+                <div>
+                    <strong>Phone:</strong>
+                    <span id="phone"></span>
+                </div>
+
+                <div>
+                    <strong>Organization:</strong>
+                    <span id="organization"></span>
+                </div>
+
+                <div>
+                    <strong>Membership Level:</strong>
+                    <span id="membership"></span>
+                </div>
+
+                <div>
+                    <strong>Submitted:</strong>
+                    <span id="timestamp"></span>
+                </div>
+
+            </div>
+
+            <a href="index.html" class="return-home">
+                Return to Home
+            </a>
+
+        </section>
 
     </main>
 

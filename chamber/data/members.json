@@ -13,7 +13,7 @@
             "name": "Positivo Tecnologia",
             "address": "Rua João Bettega, Curitiba",
             "phone": "(41) 3317-7500",
-            "website": "https://www.positivotecnologia.com.br",
+            "website": "https://loja.meupositivo.com.br/",
             "image": "positivo.jpg",
             "membership": 3,
             "description": "Brazilian technology company and computer manufacturer."
@@ -22,7 +22,7 @@
             "name": "Bar do Alemão",
             "address": "Largo da Ordem, Curitiba",
             "phone": "(41) 3223-2585",
-            "website": "https://www.bardoalemao.com.br",
+            "website": "https://www.instagram.com/bardoalemaooficial/",
             "image": "alemao.jpg",
             "membership": 2,
             "description": "Traditional German restaurant in Curitiba."
@@ -31,7 +31,7 @@
             "name": "Madero",
             "address": "Centro, Curitiba",
             "phone": "(41) 3017-4950",
-            "website": "https://www.restaurantemadero.com.br",
+            "website": "https://www.restaurantemadero.com.br/pt",
             "image": "madero.jpg",
             "membership": 3,
             "description": "Popular Brazilian burger and steak restaurant."
@@ -40,7 +40,7 @@
             "name": "Livrarias Curitiba",
             "address": "Shopping Estação, Curitiba",
             "phone": "(41) 3330-5111",
-            "website": "https://www.livrariascuritiba.com.br",
+            "website": "https://www.livrariascuritiba.com.br/",
             "image": "livraria.jpg",
             "membership": 2,
             "description": "Bookstore chain founded in Curitiba."
@@ -49,7 +49,7 @@
             "name": "Hard Rock Cafe Curitiba",
             "address": "Batel, Curitiba",
             "phone": "(41) 3154-9898",
-            "website": "https://www.hardrockcafe.com/location/curitiba",
+            "website": "https://cafe.hardrock.com/curitiba/pt/",
             "image": "hardrock.jpg",
             "membership": 1,
             "description": "International themed restaurant and live music venue."
@@ -58,7 +58,7 @@
             "name": "Festval",
             "address": "Av. Bispo Dom José, Curitiba",
             "phone": "(41) 3240-5000",
-            "website": "https://www.festval.com.br",
+            "website": "https://www.festval.com/",
             "image": "festval.jpg",
             "membership": 2,
             "description": "Premium supermarket chain from Curitiba."
