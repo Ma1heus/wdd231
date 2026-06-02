@@ -574,7 +574,7 @@ header {
     box-shadow: var(--shadow);
 }
 
-.join-hero h2 {
+.join-hero h1 {
     color: var(--primary-color);
     font-size: 2rem;
     margin-bottom: 0.75rem;
@@ -676,6 +676,8 @@ header {
 
     box-shadow: var(--shadow);
     transition: var(--transition);
+
+    animation: fadeInUp 0.8s ease forwards;
 }
 
 .membership-card:hover {
