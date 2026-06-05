@@ -50,9 +50,7 @@
 
     <script src="scripts/date.js" defer></script>
 
-    <script src="scripts/weather.js" defer></script>
-
-    <script src="scripts/spotlights.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
 
 </head>
 
@@ -68,11 +66,11 @@
 
         <nav class="navigation">
 
-            <a href="#" class="active">Home</a>
+            <a href="index.html">Home</a>
 
             <a href="directory.html">Directory</a>
 
-            <a href="discover.html">Discover</a>
+            <a href="#" class="active">Discover</a>
 
             <a href="join.html">Join</a>
 
@@ -81,95 +79,19 @@
     </header>
 
     <main>
-
-        <!-- HERO -->
-
-        <section class="hero">
-
-            <img src="images/curitiba-hero.jpg" alt="Curitiba city view" class="hero-image">
-
-            <div class="hero-content">
-
-                <h1>Curitiba Chamber of Commerce</h1>
-
-                <p>
-                    Supporting local businesses,
-                    networking opportunities,
-                    and community growth in Curitiba.
-                </p>
-
-                <a href="join.html" class="cta-button">
-                    Join the Chamber
-                </a>
-
-            </div>
-
+        <section class="discover-hero">
+            <h1>Discover Curitiba</h1>
+        
+            <p>
+                Explore some of Curitiba's most remarkable attractions,
+                landmarks, parks, and cultural destinations.
+            </p>
         </section>
-
-        <!-- EVENTS -->
-
-        <section class="events">
-
-            <h2>Current Events</h2>
-
-            <article class="event-card">
-
-                <h3>Business Networking Night</h3>
-
-                <p>
-                    Meet local entrepreneurs and business owners
-                    for an evening of networking and collaboration.
-                </p>
-
-                <p>
-                    <strong>Date:</strong>
-                    June 5, 2026
-                </p>
-
-            </article>
-
-        </section>
-
-        <!-- WEATHER -->
-
-        <section class="weather">
-
-            <h2>Weather</h2>
-
-            <div class="weather-card">
-
-                <h3 id="town">Loading...</h3>
-
-                <img id="graphic" alt="Weather icon">
-
-                <p id="description"></p>
-
-                <p id="temperature"></p>
-
-            </div>
-
-            <div class="forecast">
-
-                <h3>3-Day Forecast</h3>
-
-                <div id="forecast-container"></div>
-
-            </div>
-
-        </section>
-
-        <!-- SPOTLIGHTS -->
-
-        <section class="spotlights">
-
-            <h2>Business Spotlights</h2>
-
-            <div class="spotlight-container"></div>
-
-        </section>
-
+        
+        <section id="visit-message"></section>
+        
+        <section id="discover-cards"></section>
     </main>
-
     <footer>
 
         <div class="social-links">
