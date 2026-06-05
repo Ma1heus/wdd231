@@ -859,6 +859,11 @@ dialog p {
 
 /* Discover */
 
+.discover-grid {
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
 .discover-hero {
     background-color: var(--card-color);
 
