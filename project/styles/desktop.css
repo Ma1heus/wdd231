@@ -1,0 +1,25 @@
+@media screen and (min-width: 768px) {
+
+    body {
+        padding: 2rem;
+    }
+
+    main {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    .desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .desktop .wide {
+        grid-column: 1 / 3;
+    }
+}
