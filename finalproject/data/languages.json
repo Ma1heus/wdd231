@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "name": "Python",
+        "difficulty": "Easy",
+        "career": "Data Science",
+        "description": "Popular beginner-friendly language used for automation and data analysis."
+    },
+    {
+        "id": 2,
+        "name": "JavaScript",
+        "difficulty": "Easy",
+        "career": "Web Development",
+        "description": "The language of the web used to create interactive websites."
+    },
+    {
+        "id": 3,
+        "name": "C#",
+        "difficulty": "Medium",
+        "career": "Software Development",
+        "description": "Widely used for applications, web development, and game creation."
+    },
+    {
+        "id": 4,
+        "name": "Java",
+        "difficulty": "Medium",
+        "career": "Enterprise Development",
+        "description": "Commonly used in large business systems and Android applications."
+    },
+    {
+        "id": 5,
+        "name": "C++",
+        "difficulty": "Hard",
+        "career": "Systems Programming",
+        "description": "High-performance language used for software, games, and operating systems."
+    },
+    {
+        "id": 6,
+        "name": "TypeScript",
+        "difficulty": "Medium",
+        "career": "Web Development",
+        "description": "A strongly typed version of JavaScript."
+    },
+    {
+        "id": 7,
+        "name": "PHP",
+        "difficulty": "Easy",
+        "career": "Backend Development",
+        "description": "A popular language for building dynamic websites."
+    },
+    {
+        "id": 8,
+        "name": "Ruby",
+        "difficulty": "Easy",
+        "career": "Web Development",
+        "description": "Known for simplicity and productivity."
+    },
+    {
+        "id": 9,
+        "name": "Go",
+        "difficulty": "Medium",
+        "career": "Cloud Computing",
+        "description": "Designed for performance and scalability."
+    },
+    {
+        "id": 10,
+        "name": "Swift",
+        "difficulty": "Medium",
+        "career": "iOS Development",
+        "description": "Apple's programming language for iOS and macOS."
+    },
+    {
+        "id": 11,
+        "name": "Kotlin",
+        "difficulty": "Medium",
+        "career": "Android Development",
+        "description": "Modern language officially supported for Android."
+    },
+    {
+        "id": 12,
+        "name": "Rust",
+        "difficulty": "Hard",
+        "career": "Systems Programming",
+        "description": "Focused on memory safety and performance."
+    },
+    {
+        "id": 13,
+        "name": "SQL",
+        "difficulty": "Easy",
+        "career": "Database Management",
+        "description": "Used to manage and query relational databases."
+    },
+    {
+        "id": 14,
+        "name": "R",
+        "difficulty": "Medium",
+        "career": "Data Analysis",
+        "description": "Popular among statisticians and data analysts."
+    },
+    {
+        "id": 15,
+        "name": "Dart",
+        "difficulty": "Easy",
+        "career": "Mobile Development",
+        "description": "Used primarily with Flutter for cross-platform apps."
+    }
+]
