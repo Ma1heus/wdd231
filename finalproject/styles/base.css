@@ -240,6 +240,58 @@ dialog::backdrop {
     cursor: pointer;
 }
 
+/* FORM PAGE */
+
+.form-section {
+    background-color: var(--card-color);
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    padding: .75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    opacity: .9;
+}
+
+/* THANKS PAGE */
+
+.submission-results {
+    background-color: var(--card-color);
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+#results p {
+    margin-bottom: .75rem;
+}
+
 /* FOOTER */
 
 footer {
