@@ -15,39 +15,106 @@
     <meta property="og:title" content="CodeStart Guide">
     <meta property="og:description" content="Learn programming, discover languages, and explore tech careers.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/hero.webp">
+    <meta property="og:url" content="https://matheusluz.github.io/wdd231/finalproject/attributions.html">
+    <meta property="og:image" content="https://matheusluz.github.io/wdd231/finalproject/images/programming.webp">
 
     <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <h1>Attributions</h1>
+    <header>
 
-    <ul>
+        <div class="logo">
+            <h2>CodeStart Guide</h2>
+        </div>
 
-        <li>
-            Google Fonts - Inter Font
-            <br>
-            https://fonts.google.com/specimen/Inter
-        </li>
+        <button id="menu-btn" aria-label="Open navigation menu">
+            &#9776;
+        </button>
 
-        <li>
-            Programming language information was researched using official
-            programming language documentation and educational resources.
-        </li>
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="languages.html">Languages</a>
+            <a href="careers.html">Careers</a>
+            <a href="form.html">Get Started</a>
+        </nav>
 
-        <li>
-            Career descriptions were adapted from publicly available
-            technology career resources.
-        </li>
+    </header>
 
-        <li>
-            JSON data was created for educational purposes as part of the
-            WDD 231 course project.
-        </li>
+    <main>
 
-    </ul>
+        <section class="hero">
+
+            <h1>Attributions</h1>
+
+            <p>
+                This page contains the sources and resources used in the
+                development of the CodeStart Guide project.
+            </p>
+
+        </section>
+
+        <section class="about">
+        
+            <h2>Resources Used</h2>
+        
+            <div class="cards">
+        
+                <article class="card">
+                    <h3>Google Fonts</h3>
+                    <p>Inter Font Family</p>
+                </article>
+        
+                <article class="card">
+                    <h3>Programming Resources</h3>
+                    <p>Official programming language documentation and educational resources.</p>
+                </article>
+        
+                <article class="card">
+                    <h3>Career Information</h3>
+                    <p>Technology career information adapted from public educational resources.</p>
+                </article>
+        
+                <article class="card">
+                    <h3>JSON Data</h3>
+                    <p>Created for educational purposes as part of the WDD 231 project.</p>
+                </article>
+        
+            </div>
+        
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; <span id="currentyear"></span> CodeStart Guide
+        </p>
+
+        <p id="lastModified"></p>
+
+        <p>
+            <a href="attributions.html">Attributions</a>
+        </p>
+
+        <p>
+            <a href="#">Video Demonstration</a>
+        </p>
+
+    </footer>
 
 </body>
 

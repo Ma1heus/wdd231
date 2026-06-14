@@ -292,6 +292,30 @@ input[type="submit"]:hover {
     margin-bottom: .75rem;
 }
 
+/* ATTRIBUTIONS PAGE */
+
+.about ul {
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.about li {
+    margin-bottom: 1rem;
+}
+
+.about li:last-child {
+    margin-bottom: 0;
+}
+
+.about a {
+    color: var(--primary-color);
+    word-break: break-word;
+}
+
+.about a:hover {
+    text-decoration: underline;
+}
+
 /* FOOTER */
 
 footer {
