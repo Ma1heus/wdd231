@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CodeStart Guide | Careers</title>
+
+    <meta name="description" content="Explore technology careers and discover opportunities in software development.">
+
+    <meta name="author" content="Matheus Rodrigues">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/careers.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h1>CodeStart Guide</h1>
+        </div>
+
+        <button id="menu-btn" aria-label="Open navigation menu">
+            &#9776;
+        </button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="languages.html">Languages</a>
+            <a href="careers.html" class="active">Careers</a>
+            <a href="form.html">Get Started</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2>Technology Careers</h2>
+
+            <p>
+                Explore different career paths in programming and technology.
+            </p>
+        </section>
+
+        <section class="careers-grid">
+
+            <article class="career-card">
+                <h3>Front-End Developer</h3>
+                <p>Build websites and user interfaces.</p>
+                <button class="career-btn" data-career="frontend">
+                    Learn More
+                </button>
+            </article>
+
+            <article class="career-card">
+                <h3>Back-End Developer</h3>
+                <p>Create servers, APIs, and databases.</p>
+                <button class="career-btn" data-career="backend">
+                    Learn More
+                </button>
+            </article>
+
+            <article class="career-card">
+                <h3>Full Stack Developer</h3>
+                <p>Work on both front-end and back-end systems.</p>
+                <button class="career-btn" data-career="fullstack">
+                    Learn More
+                </button>
+            </article>
+
+            <article class="career-card">
+                <h3>Data Scientist</h3>
+                <p>Analyze data and create predictive models.</p>
+                <button class="career-btn" data-career="datascience">
+                    Learn More
+                </button>
+            </article>
+
+            <article class="career-card">
+                <h3>Game Developer</h3>
+                <p>Create games and interactive experiences.</p>
+                <button class="career-btn" data-career="game">
+                    Learn More
+                </button>
+            </article>
+
+            <article class="career-card">
+                <h3>Mobile Developer</h3>
+                <p>Build Android and iOS applications.</p>
+                <button class="career-btn" data-career="mobile">
+                    Learn More
+                </button>
+            </article>
+
+        </section>
+
+    </main>
+
+    <dialog id="careerModal">
+
+        <div id="modalContent"></div>
+
+        <button id="closeModal">
+            Close
+        </button>
+
+    </dialog>
+
+    <footer>
+
+        <p>
+            &copy; <span id="currentyear"></span> CodeStart Guide
+        </p>
+
+        <p>
+            <a href="attributions.html">Attributions</a>
+        </p>
+
+        <p>
+            <a href="#">Video Demonstration</a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
