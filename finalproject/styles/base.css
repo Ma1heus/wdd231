@@ -32,7 +32,7 @@ header {
     border-bottom: 1px solid var(--border-color);
 }
 
-.logo h1 {
+.logo h2 {
     color: var(--primary-color);
     font-size: 1.8rem;
 }
@@ -87,7 +87,7 @@ section {
     padding: 2rem 1rem;
 }
 
-.hero h2 {
+.hero h1 {
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
