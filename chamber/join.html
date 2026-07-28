@@ -1,63 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Join | Curitiba Chamber of Commerce</title>
 
     <meta name="description"
         content="Join the Curitiba Chamber of Commerce and become part of a thriving business community.">
-
     <meta name="author" content="Matheus Luz Rodrigues">
 
     <!-- Open Graph Meta Tags -->
-
     <meta property="og:title" content="Curitiba Chamber of Commerce">
-
     <meta property="og:description" content="Supporting local businesses and community development in Curitiba.">
-
     <meta property="og:image" content="https://ma1heus.github.io/wdd231/chamber/images/curitiba-hero.jpg">
-
     <meta property="og:url" content="https://ma1heus.github.io/wdd231/chamber/join.html">
-
     <meta property="og:type" content="website">
 
     <!-- Favicon -->
-
     <link rel="icon" href="images/araucaria.ico">
 
     <!-- Google Fonts -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- CSS -->
-
     <link rel="stylesheet" href="styles/base.css">
-
     <link rel="stylesheet" href="styles/larger.css">
 
     <!-- JavaScript -->
-
     <script src="scripts/navigation.js" defer></script>
-
     <script src="scripts/date.js" defer></script>
-
     <script src="scripts/join.js" defer></script>
-
 </head>
 
 <body>
-
     <header>
-
         <div class="logo">
             <h2>Curitiba Chamber</h2>
         </div>
@@ -70,25 +50,19 @@
             <a href="discover.html">Discover</a>
             <a href="join.html" class="active">Join</a>
         </nav>
-
     </header>
 
     <main>
-
         <section class="join-hero">
-
             <h1>Join the Chamber</h1>
 
             <p>
                 Become part of Curitiba's growing business community.
             </p>
-
         </section>
 
         <section class="join-container">
-
             <form method="get" action="thankyou.html" class="join-form">
-
                 <label for="firstName">
                     First Name
                 </label>
@@ -137,7 +111,6 @@
                 </label>
 
                 <select id="membership" name="membership" required>
-
                     <option value="">
                         Select a Membership
                     </option>
@@ -157,7 +130,6 @@
                     <option value="gold">
                         Gold Membership
                     </option>
-
                 </select>
 
                 <label for="description">
@@ -165,17 +137,12 @@
                 </label>
 
                 <textarea id="description" name="description" title="Describe your organization" rows="5"></textarea>
-
                 <input type="hidden" id="timestamp" name="timestamp">
-
                 <input type="submit" value="Submit Application">
-
             </form>
 
             <section class="membership-cards">
-
                 <article class="membership-card np">
-
                     <h3>NP Membership</h3>
 
                     <p>
@@ -185,11 +152,9 @@
                     <button type="button" class="modal-btn" data-modal="npModal">
                         Learn More
                     </button>
-
                 </article>
 
                 <article class="membership-card bronze">
-
                     <h3>Bronze Membership</h3>
 
                     <p>
@@ -199,11 +164,9 @@
                     <button type="button" class="modal-btn" data-modal="bronzeModal">
                         Learn More
                     </button>
-
                 </article>
 
                 <article class="membership-card silver">
-
                     <h3>Silver Membership</h3>
 
                     <p>
@@ -213,11 +176,9 @@
                     <button type="button" class="modal-btn" data-modal="silverModal">
                         Learn More
                     </button>
-
                 </article>
 
                 <article class="membership-card gold">
-
                     <h3>Gold Membership</h3>
 
                     <p>
@@ -227,15 +188,11 @@
                     <button type="button" class="modal-btn" data-modal="goldModal">
                         Learn More
                     </button>
-
                 </article>
-
             </section>
-
         </section>
 
         <dialog id="npModal">
-
             <h3>NP Membership Benefits</h3>
 
             <ul>
@@ -247,11 +204,9 @@
             <button type="button" class="close-btn">
                 Close
             </button>
-
         </dialog>
 
         <dialog id="bronzeModal">
-
             <h3>Bronze Membership Benefits</h3>
 
             <ul>
@@ -263,11 +218,9 @@
             <button type="button" class="close-btn">
                 Close
             </button>
-
         </dialog>
 
         <dialog id="silverModal">
-
             <h3>Silver Membership Benefits</h3>
 
             <ul>
@@ -279,11 +232,9 @@
             <button type="button" class="close-btn">
                 Close
             </button>
-
         </dialog>
 
         <dialog id="goldModal">
-
             <h3>Gold Membership Benefits</h3>
 
             <ul>
@@ -296,15 +247,12 @@
             <button type="button" class="close-btn">
                 Close
             </button>
-
         </dialog>
 
     </main>
 
     <footer>
-
         <div class="social-links">
-
             <a href="https://github.com/Ma1heus">
                 <img src="images/github.svg" alt="GitHub">
             </a>
@@ -316,7 +264,6 @@
             <a href="https://www.instagram.com/matheus_luzro/">
                 <img src="images/instagram.svg" alt="Instagram">
             </a>
-
         </div>
 
         <p>
@@ -326,9 +273,7 @@
         </p>
 
         <p id="lastModified"></p>
-
     </footer>
-
 </body>
 
 </html>
